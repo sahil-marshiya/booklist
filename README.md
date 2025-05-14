@@ -39,26 +39,7 @@ A responsive Angular app that fetches and displays books related to "Fouling" us
 
 ---
 
-## Project Structure
-
-```
-src/
-  app/
-    components/
-      book-list/         # Book list UI
-      book-detail/       # Book detail UI
-    services/
-      google-book.service.ts
-    models/
-      google-api.interface.ts
-    app.component.ts
-    app.component.html
-    app.routes.ts
-```
-
----
-
-3. **Run tests:**
+4. **Run tests:**
    ```sh
    ng test
    ```
