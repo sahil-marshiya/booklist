@@ -1,27 +1,47 @@
-# FirstApp
+# Book List App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+A responsive Angular app that fetches and displays books related to "Fouling" using the Google Books API.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Fetches books from the Google Books API
+- Responsive design (mobile, desktop, large screens)
+- Book list and book detail pages with routing
+- Loading and error state handling
+- Accessible UI with ARIA attributes
+- Unit tests for components and services
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Install dependencies:**
 
-## Build
+   ```sh
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Run the development server:**
 
-## Running unit tests
+   ```sh
+   ng serve
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-## Running end-to-end tests
+3. **Run tests:**
+   ```sh
+   ng test
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project Structure
 
-## Further help
+- `src/app/components/book-list` – Book list UI
+- `src/app/components/book-detail` – Book detail UI
+- `src/app/services/google-book.service.ts` – API service
+- `src/app/models/google-api.interface.ts` – API models
+- `src/app/app.routes.ts` – Routing configuration
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## API Reference
+
+- [Google Books API](https://www.googleapis.com/books/v1/volumes?q=fouling)
+
+---

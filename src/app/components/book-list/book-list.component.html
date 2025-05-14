@@ -1,0 +1,21 @@
+<div class="container py-4">
+  <div *ngIf="loading" class="alert alert-info" role="status">Loading books...</div>
+  <div *ngIf="error" class="alert alert-danger" role="alert">{{ error }}</div>
+  <div class="row">
+    <div *ngFor="let book of books$ | async" class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <img *ngIf="book?.volumeInfo?.imageLinks" [src]="book?.volumeInfo?.imageLinks?.thumbnail"
+          [alt]="book?.volumeInfo?.title" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ book?.volumeInfo?.title }}</h5>
+          <p class="card-text">{{ book?.volumeInfo?.authors?.join(', ') }}</p>
+          <a [routerLink]="['/book', book?.id]" class="btn btn-primary"
+            [attr.aria-label]="'View details for ' + (book?.volumeInfo?.title || 'book')">
+            Details
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
