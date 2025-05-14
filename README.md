@@ -32,12 +32,12 @@ A responsive Angular app that fetches and displays books related to "Fouling" us
    ```
 
 3. Run the development server:
+
    ```sh
    ng serve
    ```
-   Open [http://localhost:4200](http://localhost:4200) in your browser.
 
----
+   Open [http://localhost:4200](http://localhost:4200) in your browser.
 
 4. **Run tests:**
    ```sh
