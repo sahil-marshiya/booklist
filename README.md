@@ -18,20 +18,20 @@ A responsive Angular app that fetches and displays books related to "Fouling" us
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```sh
    git clone <your-repo-url>
    cd booklist
    ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 
    ```sh
    npm install
    ```
 
-3. Run the development server:
+3. **Run the development server:**
 
    ```sh
    ng serve
