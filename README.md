@@ -11,21 +11,52 @@ A responsive Angular app that fetches and displays books related to "Fouling" us
 - Accessible UI with ARIA attributes
 - Unit tests for components and services
 
-## Getting Started
+### Prerequisites
 
-1. **Install dependencies:**
+- Node.js (v16+ recommended)
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone <your-repo-url>
+   cd booklist
+   ```
+
+2. Install dependencies:
 
    ```sh
    npm install
    ```
 
-2. **Run the development server:**
-
+3. Run the development server:
    ```sh
    ng serve
    ```
-
    Open [http://localhost:4200](http://localhost:4200) in your browser.
+
+---
+
+## Project Structure
+
+```
+src/
+  app/
+    components/
+      book-list/         # Book list UI
+      book-detail/       # Book detail UI
+    services/
+      google-book.service.ts
+    models/
+      google-api.interface.ts
+    app.component.ts
+    app.component.html
+    app.routes.ts
+```
+
+---
 
 3. **Run tests:**
    ```sh
